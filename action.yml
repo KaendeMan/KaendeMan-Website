@@ -1,0 +1,10 @@
+name: 'Deploy KaendeMan Website'
+description: 'Automatically deploys the KaendeMan Website to GitHub Pages'
+inputs:
+  deploy-token:
+    description: 'GitHub token with push access to the repository'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'deploy.js'
