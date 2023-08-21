@@ -1,0 +1,8 @@
+assets/
+|-- css/
+|   |-- main.css         # Your main stylesheet
+|-- images/
+|   |-- Add a little bit of body text.jpg       # Example image
+|-- js/
+|   |-- script.js        # Your JavaScript file
+|-- ...other assets
