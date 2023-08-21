@@ -1,0 +1,17 @@
+# Site settings
+title: KaendeMan Website
+description: Transformative Platform for Personal Growth
+url: "https://github.com/kaendeman"  # Replace with your actual site URL
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-minimal  # Replace with the theme you're using or customize your own
+permalink: /:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  # Add any other plugins you're using
+
+# Other settings
+author: KaendeMan
