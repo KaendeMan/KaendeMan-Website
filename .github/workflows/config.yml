@@ -1,17 +1,16 @@
-# Site settings
-title: KaendeMan Website
-description: Transformative Platform for Personal Growth
-url: "https://github.com/kaendeman"  # Replace with your actual site URL
+on:
+  schedule:
+    - cron: "0 0 * * 1-5" # Run every day of the week (Monday to Friday) at midnight UTC
 
-# Build settings
-markdown: kramdown
-theme: jekyll-theme-minimal  # Replace with the theme you're using or customize your own
-permalink: /:title/
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-# Plugins
-plugins:
-  - jekyll-feed
-  # Add any other plugins you're using
-
-# Other settings
-author: KaendeMan
+      # Add steps to build and deploy your website here
